@@ -1,4 +1,4 @@
 skywodd.github.io
 =================
 
-Random web stuff
+Random web stuff. Nothing interesting here, really.
