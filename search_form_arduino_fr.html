@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <title>Formulaire de recherche - Sous forum Arduino Francophone (uniquement)</title>
+
+        <link rel="shortcut icon" type="image/x-icon" href="http://forum.arduino.cc/favicon.png">
+    </head>
+	
+    <body>
+		<h4>Formulaire de recherche - Sous forum Arduino Francophone (uniquement)</h4>
+		
+		<form action="http://forum.arduino.cc/index.php?action=search2" method="post" accept-charset="UTF-8" name="searchform" id="searchform">
+
+			<input type="hidden" name="advanced" value="1" />
+
+			<div>
+				<label for="search">Mot(s) clef(s) à rechercher :</label>
+				<input type="text" placeholder="exemple : DS13B20" name="search" />
+			</div>
+
+			<div>
+				<label for="searchtype">Mode de recherche :</label>
+				<select name="searchtype">
+					<option value="1" selected="selected">Recherche l'ensemble des mots</option>
+					<option value="2">Recherche mot par mot</option>
+				</select>
+			</div>
+
+			<div>
+				<label for="userspec">Restreindre la recherche à l'utilisateur (* = tous les utilisateurs) :</label>
+				<input type="text" name="userspec" value="*" />
+			</div>
+
+			<div>
+				<label for="sort">Ordre de classement :</label>
+				<select name="sort">
+					<option value="relevance|desc" selected="selected">Du plus pertinent au moins pertinent</option>
+					<option value="numReplies|desc">Les plus gros topics en premier</option>
+					<option value="numReplies|asc">Les plus petits topics en premier</option>
+					<option value="ID_MSG|desc">Les topics les plus récent en premier</option>
+					<option value="ID_MSG|asc">Les topics les plus vieux en premier</option>
+				</select>
+			</div>
+
+			<hr />
+
+			<div>
+				<label for="">Options de recherche :</label>
+
+				<div>
+					<label for="show_complete"><input type="checkbox" name="show_complete" id="show_complete" value="1"/>Afficher les résultats comme des messages</label>
+				</div>	
+				
+				<div>
+					<label for="subject_only"><input type="checkbox" name="subject_only" id="subject_only" value="1"/>Rechercher dans les titres des topics uniquement</label>
+				</div>
+				
+				<div>
+					<label for="">Age du message :</label>
+					
+					<span>Entre :</span>
+					<input type="text" name="minage" value="0" />
+					<span>Et :</span>
+					<input type="text" name="maxage" value="9999" />
+					<span>jours.</span>
+				</div>
+			</div>
+			
+			<fieldset>
+				<div>
+					<label for="brd50"><input type="checkbox" id="brd50" name="brd[50]" value="50" checked="checked"/>Français (ancien forum de 2005 à 2010, en lecture seule)</label>
+				</div>
+				
+				<div>
+					<label for="brd33"><input type="checkbox" id="brd33" name="brd[33]" value="33" checked="checked"/>Français</label>
+				</div>
+				
+				<div>
+					<label for="brd74"><input type="checkbox" id="brd74" name="brd[74]" value="74" checked="checked"/>Tutoriels et cours</label>
+				</div>
+				
+				<div>
+					<label for="brd75"><input type="checkbox" id="brd75" name="brd[75]" value="75" checked="checked"/>Réalisations et Projets Finis</label>
+				</div>
+				
+				<div>
+					<label for="brd76"><input type="checkbox" id="brd76" name="brd[76]" value="76" checked="checked"/>Le bar</label>
+				</div>
+			</fieldset>
+
+			<input type="submit" name="submit" value="Search" class="small button" />
+		</form>
+	</body>
+</html>
+
